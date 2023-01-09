@@ -1,0 +1,101 @@
+/* @font-face {
+    font-family: 'MyWebFont';
+    src: url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff'),
+        url('myfont.ttf') format('truetype');
+} */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+html {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+body {
+    background-color: white;
+    background:
+        linear-gradient(
+            cyan,
+            transparent
+        ),
+        linear-gradient(
+            -45deg,
+            magenta,
+            transparent
+        ),
+        linear-gradient(
+            45deg,
+            yellow,
+            transparent
+        );
+    background-blend-mode: multiply;
+    padding: 2em 2px;
+}
+h1 {
+    font-family: serif;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 1.8em;
+    font-weight: 200;
+    margin: 10px 0;
+}
+.page {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    max-width: 990px;
+    margin: auto;
+    border-top: 3em solid #333333;
+}
+.language-link-container {
+    position: absolute;
+    left: 1em;
+    top: -2em;
+    color: white;
+}
+a.language-link {
+    color: white;
+    text-decoration: none;
+}
+a.language-link.disabled {
+    color: gray;
+    pointer-events: none;
+}
+.no-fb {
+    position: absolute;
+    right: 0;
+    top: -3em;
+    height: 3em;
+}
+.jumbo {
+    background-color: #dddddd;
+    padding: 1em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.jumbo-img {
+    margin: 1em;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+}
+.jumbo-text {
+    margin: 1em;
+}
+.lead {
+    padding: 2em 1em;
+    text-align: center;
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+}

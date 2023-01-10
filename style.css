@@ -1,23 +1,18 @@
-/* @font-face {
-    font-family: 'MyWebFont';
-    src: url('myfont.woff2') format('woff2'),
-        url('myfont.woff') format('woff'),
-        url('myfont.ttf') format('truetype');
-} */
 * {
     box-sizing: border-box;
 }
 html, body {
     margin: 0;
-    padding: 0;
-    min-height: 100%;
 }
 html {
     font-family: sans-serif;
     font-weight: 100;
+    min-height: 100vh;
+    padding: 0;
 }
 body {
-    background-color: white;
+    min-height: 100%;
+    background-color: darkcyan;
     background:
         linear-gradient(
             cyan,
@@ -34,6 +29,10 @@ body {
             transparent
         );
     background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     padding: 2em 2px;
 }
 h1 {

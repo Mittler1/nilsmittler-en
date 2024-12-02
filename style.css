@@ -12,27 +12,9 @@ html {
 }
 body {
     min-height: 100%;
-    background-color: darkcyan;
-    background:
-        linear-gradient(
-            cyan,
-            transparent
-        ),
-        linear-gradient(
-            -45deg,
-            magenta,
-            transparent
-        ),
-        linear-gradient(
-            45deg,
-            yellow,
-            transparent
-        );
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-color: #1f3861;
+    background: linear-gradient(170deg, #1f3861 45%, #412c2c 100%);
     padding: 2em 2px;
 }
 h1 {
@@ -53,6 +35,7 @@ h2 {
     max-width: 990px;
     margin: auto;
     border-top: 3em solid #333333;
+    z-index: 1;
 }
 .language-link-container {
     position: absolute;
@@ -97,4 +80,31 @@ a.language-link.disabled {
     width: 100%;
     max-width: 720px;
     margin: auto;
+}
+/*
+ * Snowflakes inspired by "Realistic Snowfall Effect with CSS and JavaScript"
+ * from Jerome Rass from Codepen: https://codepen.io/jerora98/pen/rNgGOpM
+ *
+ * Improved and extended by NM
+ */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+    color: #FFF;
+    transition: opacity 1s;
+}
+.fading {
+    opacity: 0;
+}
+@keyframes fall {
+    from { top: -50px; }
+    to { top: 100vh; }
+}
+@keyframes sideWays {
+    from { transform: translateX(0); }
+    50% { transform: translateX(50px); }
+    to { transform: translateX(0); }
 }

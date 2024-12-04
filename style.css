@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
     background-color: #1f3861;
     background: linear-gradient(170deg, #1f3861 45%, #412c2c 100%);
-    padding: 2em 2px;
+    padding: 2em 5px;
 }
 h1 {
     font-family: serif;
@@ -30,18 +30,23 @@ h2 {
 }
 .page {
     position: relative;
-    background-color: white;
     width: 100%;
     max-width: 990px;
     margin: auto;
-    border-top: 3em solid #333333;
     z-index: 1;
+    color: #FFFFFF;
+    background-color: #FFFFFF22;
+    background: linear-gradient(50deg, #ffffff00 0%, #FFFFFF22 20%, #FFFFFF22 70%, #FFFFFF33 80%, #FFFFFF22 90%);
+    border: 1px solid #FFFFFF88;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px #00000044;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .language-link-container {
     position: absolute;
-    left: 1em;
-    top: -2em;
-    color: white;
+    right: 1.2em;
+    top: 1em;
 }
 a.language-link {
     color: white;
@@ -51,14 +56,7 @@ a.language-link.disabled {
     color: gray;
     pointer-events: none;
 }
-.no-fb {
-    position: absolute;
-    right: 0;
-    top: -3em;
-    height: 3em;
-}
 .jumbo {
-    background-color: #dddddd;
     padding: 1em 5em;
     display: flex;
     align-items: center;

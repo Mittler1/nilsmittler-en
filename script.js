@@ -11,7 +11,7 @@ fallSecs = 18;
 sideSecs = 12;
 fontSize = 16;
 parallel = 10;
-interval = 5000;
+interval = 7500;
 
 function createSnowflake() {
   const snowflake = document.createElement('div');
@@ -31,6 +31,7 @@ function createSnowflake() {
 
 n = 0;
 while (n < parallel) {
-  n++;
+  setTimeout(createSnowflake, Math.max(0, Math.random() * interval - interval / 2));
   setInterval(createSnowflake, Math.random() * interval + interval / 2);
+  n++;
 }

@@ -37,7 +37,6 @@ h2 {
     color: #FFFFFF;
     background-color: #FFFFFF22;
     background: linear-gradient(50deg, #ffffff00 0%, #FFFFFF22 20%, #FFFFFF22 70%, #FFFFFF33 80%, #FFFFFF22 90%);
-    border: 1px solid #FFFFFF88;
     border-radius: 16px;
     box-shadow: 0 5px 15px #00000044;
     backdrop-filter: blur(5px);
